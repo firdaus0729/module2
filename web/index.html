@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 2 Dashboard</title>
+  <link rel="stylesheet" href="/web/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>NewzNow Module 2</h1>
+    <p class="muted">Paste a Module 1 dashboard/admin JWT to access protected APIs.</p>
+
+    <section class="card">
+      <label>JWT Token</label>
+      <textarea id="token" rows="5" placeholder="Bearer token from Module 1"></textarea>
+      <div class="row">
+        <button id="saveToken">Save token</button>
+        <button id="loadStories">Load stories</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Stories</h2>
+      <div id="stories"></div>
+    </section>
+
+    <section class="card">
+      <h2>Story Detail</h2>
+      <div id="detail" class="muted">Select a story</div>
+    </section>
+  </main>
+  <script src="/web/app.js"></script>
+</body>
+</html>
